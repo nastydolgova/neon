@@ -79,7 +79,7 @@ body {
   position: absolute;
   top: 30px;
   left: 20px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .page-header__logo-img{
@@ -122,7 +122,8 @@ body {
 
 @media (max-width:1199px) {
   .main-nav--closed {
-    position: relative
+    position: relative;
+    background-color: #120d0d;
   }
 
   .main-nav--closed .main-nav__toogle {
