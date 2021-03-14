@@ -5,6 +5,11 @@
   display: none
 }
 
+a{
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -324,116 +329,6 @@ body {
   color: #00CA54;
 }
 
-/* Слайдер */
-
-
-
-.slider{
-  position: relative;
-  margin: auto;
-  height: 50vw;
-  margin-bottom: 15px;
-}
-/* Картинка мастабируется по отношению к родительскому элементу */
-.slider .item img {
-  object-fit: cover;
-  width: 100%;
-  height: 50vw;
-  border: none !important;
-  box-shadow: none !important;
-}
-/* Кнопки вперед и назад */
-.slider .prev, .slider .next {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  height: 100%;
-  vertical-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.slider .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* При наведении на кнопки добавляем фон кнопок */
-/* .slider .prev:hover,
-.slider .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-} */
-/* Заголовок слайда */
-
-.slideText {
-  position: absolute;
-  color: #eaeaea;
-  font-size: 20px;
-  left: 50%;
-  bottom: 0;
-  text-align: end;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
-}
-
-/* Кружочки */
-.slider-dots {
-  text-align: center;
-}
-.slider-dots_item{
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.slider-dots_item:hover {
-  background-color: #aaa;
-}
-/* Анимация слайдов */
-.slider .item {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {
-      opacity: .4
-  }
-  to {
-      opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-      opacity: .4
-  }
-  to {
-      opacity: 1
-  }
-}
-
-@media (min-width:1200px) {
-  .slider {
-    max-width: 70%;
-}
-}
 
 /* Контакты */
 
@@ -601,7 +496,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 40px 7px
+  margin: 40px 7px;
 }
 
 @media (min-width:660px) {
@@ -634,19 +529,37 @@ body {
 
 
 
-/* Слайдер */
+/* Галлерея */
 
-.slider-main{
+.gallery{
   padding: 35px 20px;
 }
 
-
-@media (min-width:1200px) {
-  .slider-main{
+@media (min-width:660px) {
+  .gallery{
     padding: 0 130px;
   }
 }
 
+@media (min-width:1200px) {
+  .gallery{
+    padding: 0 130px;
+  }
+}
+
+.gallery-wrp{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start
+}
+
+.gallery img{
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
 
 /* О нас */
 
@@ -887,7 +800,7 @@ box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
 
 
  
-.slider__title:before,
+.gallery__title:before,
 .about__title:before,
 .advantages__title:before{
   background-color: #00CA54;
@@ -899,7 +812,7 @@ box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
   left: 15px;
 }
 
-.slider__title:after,
+.gallery__title:after,
 .about__title:after,
 .advantages__title:after{
   background-color: #00CA54;
@@ -916,13 +829,10 @@ box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
     margin-top: 50px;
   }
 
-  .slider__title{
-    margin-left: 130px;
-  }
 }
 
 @media (min-width:1200px) {
-  .slider__title{
+  .gallery__title{
     margin-left: 0;
   }
 }
@@ -937,6 +847,11 @@ box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
 
 .connection span{
   text-transform: uppercase;
+
+}
+
+.info__btn--bottom{
+  cursor: pointer;
 }
 
 /* Анимация при скроле */
@@ -992,6 +907,16 @@ main section.section--active {
   transition: 0.3s;
 }
 
+.main-nav__toogle{
+  animation: none;
+  transition: none;
+}
+
+
+.gallery-wrp a{
+  margin: 0;
+  padding: 0;
+}
 
 .hidden {
   display: none;
