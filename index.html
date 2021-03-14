@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <header class="page-header" style="background-image: url(../img/bg.jpg);">
+        <header class="page-header" style="background-image: url(../img/bg1.jpg);">
             <a href="./index.html" class="page-header__logo">
                 <img class="page-header__logo-img" src="./img/logo.png" alt="">
             </a>
@@ -19,84 +19,95 @@
                     <button class="main-nav__toogle">
                     </button>
                     <ul class="main-nav__list">
-                        <li class="main-nav__list-item"> <a class="main-nav__link" href="#"> О компании</a></li>
                         <li class="main-nav__list-item"> <a class="main-nav__link" href="#portfolio">Портфолио</a> </li>
-                        <li class="main-nav__list-item"> <a class="main-nav__link" href="#"> Приемущества</a></li>
-                        <li class="main-nav__list-item"> <a class="main-nav__link" href="#">Контакты</a> </li>
+                        <li class="main-nav__list-item"> <a class="main-nav__link" href="#about"> Приемущества</a></li>
+                        <li class="main-nav__list-item"> <a class="main-nav__link" href="#contacts">Контакты</a> </li>
                     </ul>
                 </nav>
                 <section class="info">
                         <h1 class="info__h1">Неоновые вывески</h1>
-                        <p class="info__p">Производство уникальных неоновых вывесок</p>
-                        <a href="#" class="info__btn">Оставить заявку</a>
+                        <p class="info__p">Производство уникальных неоновых вывесок <br>
+                            <span> Отправь заявку сейчас и получи чек - лист эффективной вывески</span>
+                        </p>
+                        <a href="#" class="info__btn">Создать вывеску</a>
                 </section>
         </header>
         <main class="page-main">
+            <section class=" slider-main" id="portfolio">
+                <h2 class="section-title slider__title">Наши работы</h2>
+                <div class="slider">
+                    <div class="item">
+                        <img src="img/размер_1х0,5м_подложка_оргстекло_цена_9800р.jpg" alt="Первый слайд">
+                        <div class="slideText">1х0.5м, 9800р</div>
+                    </div>
+                
+                    <div class="item">
+                        <img src="img/размер_1х1,3м_подложка_оргстекло_цена_17500р.jpg" alt="Второй слайд">
+                        <div class="slideText">1х1.3м, 17500р</div>
+                    </div>
+                
+                    <div class="item">
+                        <img src="img/размер_40х15см_подложка_оргстекло_цена_4900р.jpg" alt="Третий слайд">
+                        <div class="slideText">40х15см, 4900р</div>
+                    </div>
 
-            <section class="portfolio" id="portfolio">
-                <button class="portfolio__button button--prev">Туда </button>
-
-                <div class="portfolio__item slider__item">
-                  <div class="portfolio__item-item">
-                      <img src="./img/PQ36AkKJfAc.png" alt="" class="portfolio__item-img">
-                      <div class="portfolio__wrp">
-                          <p class="portfolio__text">ВОТ ТАК ВОТ</p>
-                      </div>
-                  </div>
-                  <div  class="portfolio__item-item">
-                      <img src="./img/k_pBB5wJtaU.png" alt="" class="portfolio__item-img">
-                      <div class="portfolio__wrp">
-                          <p class="portfolio__text">И ЕЩЕ ТАК</p>
-                      </div>
-                  </div>
+                    <div class="item">
+                        <img src="img/размер_40х60см_подложка_оргстекло_цена_8000р.jpg" alt="Третий слайд">
+                        <div class="slideText">40х60см, 8000р</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/размер_60х40см_подложка_оргстекло_цена_8400р.jpg" alt="Третий слайд">
+                        <div class="slideText">60х40см, 8400р</div>
+                    </div>
+                
+                    <a class="prev" onclick="minusSlide()"><span>&#10094;</span></a>
+                    <a class="next" onclick="plusSlide()"><span>&#10095;</span></a>
                 </div>
-                 <div class="portfolio__item slider__item hidden">
-                    <div class="portfolio__item-item">
-                        <img src="./img/PQ36AkKJfAc.png" alt="" class="portfolio__item-img">
-                        <div class="portfolio__wrp">
-                            <p class="portfolio__text">ВОТ ТАК ВОТ2</p>
-                        </div>
-                    </div>
-                    <div  class="portfolio__item-item">
-                        <img src="./img/k_pBB5wJtaU.png" alt="" class="portfolio__item-img">
-                        <div class="portfolio__wrp">
-                            <p class="portfolio__text">И ЕЩЕ ТАК3</p>
-                        </div>
-                    </div>
+                
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(4)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(5)"></span> 
                 </div>
-                <div class="portfolio__item slider__item hidden">
-                    <div class="portfolio__item-item">
-                        <img src="./img/PQ36AkKJfAc.png" alt="" class="portfolio__item-img">
-                        <div class="portfolio__wrp">
-                            <p class="portfolio__text">ВОТ ТАК ВОТ3</p>
-                        </div>
-                    </div>
-                    <div  class="portfolio__item-item">
-                        <img src="./img/k_pBB5wJtaU.png" alt="" class="portfolio__item-img">
-                        <div class="portfolio__wrp">
-                            <p class="portfolio__text">И ЕЩЕ ТАК3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__item slider__item hidden">
-                    <div class="portfolio__item-item">
-                        <img src="./img/PQ36AkKJfAc.png" alt="" class="portfolio__item-img">
-                        <div class="portfolio__wrp">
-                            <p class="portfolio__text">ВОТ ТАК ВОТ3</p>
-                        </div>
-                    </div>
-                    <div  class="portfolio__item-item">
-                        <img src="./img/k_pBB5wJtaU.png" alt="" class="portfolio__item-img">
-                        <div class="portfolio__wrp">
-                            <p class="portfolio__text">И ЕЩЕ ТАК3</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="portfolio__button button--next">Сюда</button>
-
             </section>
-
-            <section class="contacts">
+            <section class="about" id="about">
+                <h2 class="section-title about__title">Почему неон?</h2>
+                <p class="about__txt">
+                    Одна из главных ценностей современного мира это уникальность. Именно поэтому так важно подчеркнуть индивидуальность и стиль своего дома или бизнеса. Решение этой задачи - неоновая вывеска.
+                    Неон выделит вас среди конкурентов и заставит сердца твоих клиентов биться чаще. В дом он принесет стиль и уютную атмосферу. Идеально подойдет для фото, видео зон.
+                </p>
+                <img src="./img/sm3Ub_IJKQg.png" alt="" class="about__img">
+            </section>
+            <section class="advanteges">
+                <h2 class="section-title advantages__title">Наши Приемущества</h2>
+                <div class="advantages__wrp">
+                    <details class="advantages__details" open>
+                       <summary>Почему стоит заказать у нас?</summary>
+                            <ul>
+                                <li>Бесплатный макет и замер</li>
+                                <li>Заказ будет выполнен точно в срок (изготовление от 3х дней)</li>
+                                <li>Гарантия качества (мы гарантируем, что работа выполнена из качественных материалов)</li>
+                            </ul>
+                   </details>
+                   <details  class="advantages__details">
+                        <summary>Почему стоит заказать именно неоновые вывески?</summary>
+                        <p class="advantages__item-title">Выбор многих в пользу вывесок из гибкого неона продиктован 3мя главными преимуществами:</p>
+                        <ul>
+                            <li>Ударостойкость (гибкий неон - это светодиодная лента в силиконовой оболочке, которая защищает от пыли, влаги и механических повреждений)</li>
+                            <li>Низкое потребление энергии (гибкий неон работает от 12в)</li>
+                            <li>Безопасность (никакого стекла и газа в отличии от стеклянных неоновых трубок)</li>
+                        </ul>
+                </details>
+                <details  class="advantages__details">
+                    <summary>Оплата и доставка</summary>
+                    <p>Доставка по всей России</p>
+                    <p> Оформление заявки, согласование макета, оплата 50% от стоимости, получение вывеску, оплата остальное</p>
+                </details>
+               </div>
+            </section>
+            <section id="contacts" class="contacts">
                 <h1 class="contacts__h1">
                     Остались вопросы?
                     Свяжитесь с нами!
@@ -118,20 +129,9 @@
                         mail@htmlacademy.ru
                     </a>
                 </div>
-                <div class="contacts__item">
-                    <p class="contacts__p">
-                        Приезжайте в гости:
-                    </p>
-                    <a href="#" class="contacts__link">
-                        ул. Большая
-                        Конюшенная, 19/8
-                    </a>
-                </div>
             </section>
 
         </main>
-      
-      
         <footer class="page-footer">
             <div class="page-footer__social social">
                 <a href="#" class="social__link">
@@ -152,6 +152,20 @@
             </div>
         </footer>
     </div>
+    <div class="modal hidden">
+        <a href="#" class="modal__link-close">
+            <svg height="20px" viewBox="0 0 329.26933 329" width="20px" xmlns="http://www.w3.org/2000/svg"><g fill="#f44336"><path d="m21.339844 329.398438c-5.460938 0-10.925782-2.089844-15.082032-6.25-8.34375-8.339844-8.34375-21.824219 0-30.164063l286.589844-286.59375c8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.339844 8.34375 21.824219 0 30.164063l-286.589844 286.59375c-4.183594 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/><path d="m307.929688 329.398438c-5.460938 0-10.921876-2.089844-15.082032-6.25l-286.589844-286.59375c-8.34375-8.339844-8.34375-21.824219 0-30.164063 8.339844-8.339844 21.820313-8.339844 30.164063 0l286.589844 286.59375c8.34375 8.339844 8.34375 21.824219 0 30.164063-4.160157 4.179687-9.621094 6.25-15.082031 6.25zm0 0"/></g></svg>
+        </a>
+        <h3 class="modal__title">Оставьте заявку для получения чек-листа</h3>
+        <form action="" class="modal__form">
+                    <input class="modal__input" type="text" class="modal__radio" placeholder="Ваше имя">
+                    <input class="modal__input" type="text" class="modal__radio" placeholder="E-mail">
+                    <textarea class="modal__textarea" cols="30" rows="10" placeholder="Введите ваше сообщение..."></textarea>
+                <button class="modal__button">Отправить</button>
+        </form>
+    </div>
+    <div class="body__background hidden"></div>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="js/app.js"></script>
 </body>
