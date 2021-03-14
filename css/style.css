@@ -988,6 +988,11 @@ main section.section--active {
 }
 
 
+.main-nav__toogle:hover{
+  -webkit-transition: none;
+  transition: none;
+  animation: none;
+}
 
 .hidden {
   display: none;
