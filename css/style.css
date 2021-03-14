@@ -756,6 +756,7 @@ background: linear-gradient(90deg, rgba(204,204,204,0.6026785714285714) 0%, rgba
 -moz-box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.2);
 box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.2);
 border-radius: 10px;
+  border: 1px solid #003315;
 }
 
 .modal__link-close{
