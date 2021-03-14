@@ -32,7 +32,7 @@ body {
 }
 
 
-@font-face {
+/* @font-face {
   font-family: 'Open Sans';
   font-weight: 400;
   src: local("Open Sans"),url(../font/OpenSans-Regular.woff) format("woff");
@@ -52,7 +52,7 @@ body {
   src: local("Open Sans"),url(../font/OpenSans-Light.woff) format("woff");
   font-display: swap
 }
-
+ */
 /* Page-header */
 
 .page-header {
