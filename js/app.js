@@ -1,9 +1,10 @@
 "use strict";
 let mainNav = document.querySelector(".main-nav"),
     menuBtn = document.querySelector(".main-nav__toogle"),
-    orderBtnIndex = document.querySelector('.info__btn'),
+    orderBtnIndex = document.querySelector('.info__btn--top'),
     popUp = document.querySelector('.modal'),
-    closeModalBtn = document.querySelector('.modal__link-close');
+    closeModalBtn = document.querySelector('.modal__link-close'),
+    popUpBottom = document.querySelector('.info__btn--bottom');
 
 function openMenu() {
     mainNav.classList.toggle("main-nav--closed"),
@@ -55,6 +56,8 @@ function showSlides(n) {
 // Модалка
 
 orderBtnIndex.addEventListener('click', openModal ); 
+popUpBottom.addEventListener('click', openModal ); 
+
 closeModalBtn.addEventListener('click', openModal ); 
 
 document.addEventListener("keydown", function (e) {

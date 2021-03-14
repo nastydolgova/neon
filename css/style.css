@@ -82,15 +82,10 @@ body {
 }
 
 .page-header__nav {
-  background: rgb(204,204,204);
-background: linear-gradient(90deg, rgba(204,204,204,0.6026785714285714) 0%, rgba(18,13,13,0.5942752100840336) 60%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100px;
-  -webkit-box-shadow: -1px -12px 12px 0px rgba(206, 65, 65, 0.70) inset;
-  -moz-box-shadow: -1px -12px 12px 0px rgba(18, 13, 13, 0.70) inset;
-  box-shadow: -1px -12px 12px 0px rgba(18, 13, 13, 0.70) inset;
 }
 
 .main-nav__toogle {
@@ -273,6 +268,7 @@ background: linear-gradient(90deg, rgba(204,204,204,0.6026785714285714) 0%, rgba
   text-transform: uppercase;
   text-align: center;
   border-radius: 10px;
+  display: inline-block;
 }
 
 
@@ -283,7 +279,7 @@ background: linear-gradient(90deg, rgba(204,204,204,0.6026785714285714) 0%, rgba
   color: #fafafa;
   margin: 0;
   padding: 0 0 10px 50px;
-  text-shadow: 0 0 5px #fafafa, 0 0 10px #fafafa, 0 0 20px #fafafa, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;}
+}
 
 .info__p {
   display: inline-block;
@@ -294,11 +290,7 @@ background: linear-gradient(90deg, rgba(204,204,204,0.6026785714285714) 0%, rgba
   margin: 0;
   padding: 15px;
   margin-bottom: 20px;
-  background-color: #120d0d;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(88, 88, 88, 0.7) inset;
-  -moz-box-shadow: 0px 5px 10px 2px rgba(88, 88, 88, 0.7) inset;
-  box-shadow: 0px 5px 10px 2px rgba(88, 88, 88, 0.7) inset;
+
 }
 
 .info__p span{
@@ -756,6 +748,7 @@ background: linear-gradient(90deg, rgba(204,204,204,0.6026785714285714) 0%, rgba
 -moz-box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.2);
 box-shadow: 0px 5px 10px 8px rgba(0, 0, 0, 0.2);
 border-radius: 10px;
+border: 1px solid #003315;
 }
 
 .modal__link-close{
@@ -934,6 +927,18 @@ box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
   }
 }
 
+.connection{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.connection span{
+  text-transform: uppercase;
+}
+
 /* Анимация при скроле */
 
 main section {
@@ -986,7 +991,6 @@ main section.section--active {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 
 
 .hidden {
