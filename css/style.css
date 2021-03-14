@@ -339,7 +339,7 @@ background: linear-gradient(90deg, rgba(204,204,204,0.6026785714285714) 0%, rgba
 .slider{
   position: relative;
   margin: auto;
-  height: 50vw;
+  height: 50vh;
   margin-bottom: 15px;
 }
 /* Картинка мастабируется по отношению к родительскому элементу */
