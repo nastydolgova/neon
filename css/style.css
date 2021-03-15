@@ -37,7 +37,7 @@ body {
 }
 
 
-@font-face {
+/* @font-face {
   font-family: 'Open Sans';
   font-weight: 400;
   src: local("Open Sans"),url(../font/OpenSans-Regular.woff) format("woff");
@@ -56,7 +56,7 @@ body {
   font-weight: 300;
   src: local("Open Sans"),url(../font/OpenSans-Light.woff) format("woff");
   font-display: swap
-}
+} */
 
 /* Page-header */
 
@@ -421,7 +421,7 @@ body {
   .contacts__h1 {
     width: 100%;
     font-size: 40px;
-    padding: 60px 120px
+    padding: 50px 130px
   }
 
 }
@@ -534,6 +534,9 @@ body {
 
 .gallery{
   padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 @media (min-width:660px) {
@@ -541,6 +544,8 @@ body {
     padding: 0 130px;
   }
 }
+
+@media(max-width)
 
 @media (min-width:1200px) {
   .gallery{
@@ -552,7 +557,10 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start
+  justify-content: center;
+  align-self: center;
+  max-width: 800px;
+
 }
 
 .gallery img{
@@ -566,6 +574,9 @@ body {
 
 .about{
   padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .about__txt{
@@ -582,6 +593,10 @@ body {
 @media (min-width:660px) {
   .about{
     padding: 0 130px;
+  }
+  .about__img{
+    max-width: 100%;
+    align-self: center;
   }
 }
 
@@ -792,7 +807,7 @@ box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
 }
 
 .section-title{
-  margin: 0 0 35px 0;
+  margin: 50px 0 35px 0;
   font-weight: 500;
   text-transform: uppercase;
   position: relative;
@@ -825,13 +840,6 @@ box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
   left: 40px;
 }
 
-@media (min-width:660px) {
-  .section-title{
-    margin-top: 50px;
-  }
-
-}
-
 @media (min-width:1200px) {
   .gallery__title{
     margin-left: 0;
@@ -844,15 +852,30 @@ box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2) inset;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 35px 20px;
 }
+
 
 .connection h3{
   text-transform: uppercase;
-
+  text-align: center;
 }
 
 .info__btn--bottom{
   cursor: pointer;
+}
+
+@media (min-width:660px) {
+  .connection{
+    padding: 0 130px;
+  }
+
+  .connection-title{
+    margin: 50px 0 35px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+  }
 }
 
 /* Анимация при скроле */
